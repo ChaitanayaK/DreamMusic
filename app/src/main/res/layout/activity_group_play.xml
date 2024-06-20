@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beigebg"
+    tools:context=".GroupPlayActivity">
+
+    <Button
+        android:id="@+id/create_btn_id"
+        android:layout_width="214dp"
+        android:layout_height="104dp"
+        android:text="Create"
+        android:background="@drawable/createjoin"
+        android:padding="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#AE310A"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/join_btn_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/join_btn_id"
+        android:layout_width="218dp"
+        android:layout_height="97dp"
+        android:background="@drawable/endbtn"
+        android:fontFamily="sans-serif-black"
+        android:padding="20dp"
+        android:text="Join"
+        android:textColor="#031263"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_btn_id"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

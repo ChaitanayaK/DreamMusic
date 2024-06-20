@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beigebg"
+    tools:context=".JoinerActivity">
+
+    <EditText
+        android:id="@+id/add_unique_id_edit_text"
+        android:layout_width="256dp"
+        android:layout_height="83dp"
+        android:autofillHints="Unique Id"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:hint="Id"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/final_join_button_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/final_join_button_id"
+        android:layout_width="186dp"
+        android:layout_height="99dp"
+        android:background="@drawable/joinbtn"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="Join"
+        android:textColor="#880330"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_unique_id_edit_text"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
